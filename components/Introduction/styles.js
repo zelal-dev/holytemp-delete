@@ -3,7 +3,7 @@ import styled from "@emotion/styled"
 const Styles = {
   Wrapper: styled.section`
     display: flex;
-    padding: 120px;
+    margin: 120px;
     align-items: flex-start;
   `,
   Call: styled.div`
