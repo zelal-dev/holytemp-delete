@@ -1,3 +1,5 @@
 import Button from "./Button"
-
-export { Button }
+import SectionTitle from "./SectionTitle"
+import DescriptionText from "./DescriptionText"
+import Card from "./Card"
+export { Button, SectionTitle, DescriptionText, Card }
