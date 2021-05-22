@@ -4,7 +4,8 @@ const StyledSectionTitle = styled.h2`
   color: #211e2d;
   font-weight: 600;
   font-size: 40px;
-  line-height: 59px;
+  line-height: 60px;
+  margin-bottom: 18px;
 `
 const SectionTitle = ({ children }) => {
   return <StyledSectionTitle>{children}</StyledSectionTitle>
