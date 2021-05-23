@@ -1,5 +1,4 @@
 import Navbar from "../Navbar"
-import Image from "next/image"
 import { Button } from "../shared"
 import Styles from "./styles"
 

@@ -2,9 +2,9 @@ import styled from "@emotion/styled"
 
 const Styles = {
   Wrapper: styled.section`
-    display: flex;
     margin: 120px;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   `,
   Call: styled.div`
     font-weight: 500;

@@ -17,17 +17,19 @@ const Home = () => {
   return (
     <MainWrapper>
       <Head>
-        <title>HOLYTEM | HOME</title>
+        <title>IT AGENCY | HOME</title>
         <meta name='description' content='HolyTemp' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <HeroSection />
-      <Introduction />
-      <MileStone />
-      <OurVideo />
-      <Achievements />
-      <Projects />
-      <ContactUs />
+      <main>
+        <HeroSection />
+        <Introduction />
+        <MileStone />
+        <OurVideo />
+        <Achievements />
+        <Projects />
+        <ContactUs />
+      </main>
       <Footer />
     </MainWrapper>
   )

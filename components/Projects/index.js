@@ -24,8 +24,17 @@ const Styles = {
   `,
   Grid: styled.div`
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    grid-auto-rows: 350px;
+    > div {
+      background: green;
+      overflow: hidden;
+
+      > img {
+        width: 100%;
+      }
+    }
   `,
 }
 const Projects = () => {
@@ -65,12 +74,24 @@ const Projects = () => {
         </li>
       </ul>
       <Styles.Grid>
-        <img src='/project-image.PNG' alt='PROJECT TITLE ' />
-        <img src='/project-image.PNG' alt='PROJECT TITLE ' />
-        <img src='/project-image.PNG' alt='PROJECT TITLE ' />
-        <img src='/project-image.PNG' alt='PROJECT TITLE ' />
-        <img src='/project-image.PNG' alt='PROJECT TITLE ' />
-        <img src='/project-image.PNG' alt='PROJECT TITLE ' />
+        <div>
+          <img src='/project-image.PNG' alt='PROJECT TITLE ' />
+        </div>
+        <div>
+          <img src='/project-image.PNG' alt='PROJECT TITLE ' />
+        </div>
+        <div>
+          <img src='/project-image.PNG' alt='PROJECT TITLE ' />
+        </div>
+        <div>
+          <img src='/project-image.PNG' alt='PROJECT TITLE ' />
+        </div>
+        <div>
+          <img src='/project-image.PNG' alt='PROJECT TITLE ' />
+        </div>
+        <div>
+          <img src='/project-image.PNG' alt='PROJECT TITLE ' />
+        </div>
       </Styles.Grid>
     </Styles.Wrapper>
   )

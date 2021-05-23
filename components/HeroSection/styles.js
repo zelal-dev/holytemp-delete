@@ -1,7 +1,7 @@
 import styled from "@emotion/styled"
 
 const Styles = {
-  Hero: styled.div`
+  Hero: styled.section`
     background: #ffeee5;
     margin: auto;
     border-radius: 30px;

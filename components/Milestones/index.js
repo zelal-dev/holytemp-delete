@@ -9,13 +9,19 @@ const Styles = {
     justify-content: center;
     margin-bottom: 24px;
   `,
+  CardContainer: styled.div`
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(272px, 1fr));
+    grid-auto-rows: 330px;
+    place-items: center;
+  `,
   Card: styled.div`
-    background: #ffffff;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    padding: 30px;
-    margin-right: 30px;
     max-width: 270px;
+    max-height: 320px;
+    padding: 30px;
     > div {
       display: flex;
       align-items: center;
@@ -75,7 +81,7 @@ const MileStone = () => {
           egestas condimentum.
         </DescriptionText>
       </Styles.Flex>
-      <Styles.Flex>
+      <Styles.CardContainer>
         {cards.map((card) => (
           <Styles.Card key={card.id}>
             <div>
@@ -89,7 +95,7 @@ const MileStone = () => {
             <p>{card.desc} </p>
           </Styles.Card>
         ))}
-      </Styles.Flex>
+      </Styles.CardContainer>
     </Styles.Wrapper>
   )
 }

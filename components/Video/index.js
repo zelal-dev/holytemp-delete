@@ -7,6 +7,7 @@ const Styles = {
   Content: styled.div`
     background: #ffeee5;
     height: 400px;
+    overflow: initial;
   `,
   Flex: styled.div`
     display: flex;
