@@ -50,25 +50,25 @@ const MileStone = () => {
       id: 1,
       title: "Strategy",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-      img: "/milestone-image.PNG",
+      img: "/img/milestones/strategy.PNG",
     },
     {
       id: 2,
       title: "Design",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-      img: "/milestone-image.PNG",
+      img: "/img/milestones/design.PNG",
     },
     {
       id: 3,
       title: "Development",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-      img: "/milestone-image.PNG",
+      img: "/img/milestones/development.PNG",
     },
     {
       id: 4,
       title: "Support",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-      img: "/milestone-image.PNG",
+      img: "/img/milestones/support.PNG",
     },
   ]
   return (

@@ -49,7 +49,7 @@ const ContactUs = () => {
             Send Message
           </Button>
         </Styles.Form>
-        <img src='/contact-us-illustration.PNG' alt='Contact Us' />
+        <img src='/img/svgs/contact.svg' alt='Contact Us' />
       </Styles.Flex>
     </Styles.Wrapper>
   )

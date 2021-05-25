@@ -20,7 +20,7 @@ const HeroSection = () => {
             <Button>Start Now</Button>
           </Styles.Header>
           <Styles.Image>
-            <img src='/hero-illustration.PNG' alt='HOLY TEMP' />
+            <img src='/img/svgs/hero.svg' alt='HOLY TEMP' />
           </Styles.Image>
         </Styles.Content>
       </Styles.Wrapper>

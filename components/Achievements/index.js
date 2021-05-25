@@ -51,7 +51,7 @@ const Achievements = () => {
         </DescriptionText>
       </Styles.Flex>
       <Styles.Flex>
-        <img src='/achievement-illustration.PNG' alt='Achievements' />
+        <img src='/img/svgs/achichievements.svg' alt='Achievements' />
         <div>
           <Styles.Flex>
             <Card name='Projects Completed' number='250+' />

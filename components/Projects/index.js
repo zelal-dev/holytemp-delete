@@ -1,42 +1,44 @@
-import styled from "@emotion/styled"
+import Styles from "./styles"
 import { DescriptionText, SectionTitle } from "../shared"
-const Styles = {
-  Wrapper: styled.section`
-    margin: 120px;
-    > ul {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      > li {
-        padding: 16px;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 30px;
-        text-align: center;
-        color: #211e2d;
-      }
-    }
-  `,
-  Flex: styled.div`
-    display: flex;
-    justify-content: center;
-    margin-bottom: 24px;
-  `,
-  Grid: styled.div`
-    display: grid;
-    grid-gap: 30px;
-    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
-    grid-auto-rows: 350px;
-    > div {
-      background: green;
-      overflow: hidden;
+const projects = [
+  {
+    id: 0,
+    category: "Web Design",
+    title: "Project 1",
+    image: "/img/projects/project-1.PNG",
+  },
+  {
+    id: 1,
+    category: "Logo design",
+    title: "Project 2",
+    image: "/img/projects/project-2.PNG",
+  },
+  {
+    id: 2,
+    category: "Design",
+    title: "Project 3",
+    image: "/img/projects/project-3.PNG",
+  },
+  {
+    id: 3,
+    category: "Advertisement",
+    title: "Project 4",
+    image: "/img/projects/project-4.PNG",
+  },
+  {
+    id: 4,
+    category: "Brand",
+    title: "Project 5",
+    image: "/img/projects/project-5.PNG",
+  },
+  {
+    id: 5,
+    category: "Photo",
+    title: "Project 6",
+    image: "/img/projects/project-6.PNG",
+  },
+]
 
-      > img {
-        width: 100%;
-      }
-    }
-  `,
-}
 const Projects = () => {
   return (
     <Styles.Wrapper>
@@ -74,24 +76,11 @@ const Projects = () => {
         </li>
       </ul>
       <Styles.Grid>
-        <div>
-          <img src='/project-image.PNG' alt='PROJECT TITLE ' />
-        </div>
-        <div>
-          <img src='/project-image.PNG' alt='PROJECT TITLE ' />
-        </div>
-        <div>
-          <img src='/project-image.PNG' alt='PROJECT TITLE ' />
-        </div>
-        <div>
-          <img src='/project-image.PNG' alt='PROJECT TITLE ' />
-        </div>
-        <div>
-          <img src='/project-image.PNG' alt='PROJECT TITLE ' />
-        </div>
-        <div>
-          <img src='/project-image.PNG' alt='PROJECT TITLE ' />
-        </div>
+        {projects.map((project) => (
+          <div key={project.id}>
+            <img src={project.image} alt='' />
+          </div>
+        ))}
       </Styles.Grid>
     </Styles.Wrapper>
   )

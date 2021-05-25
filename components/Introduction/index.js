@@ -4,7 +4,7 @@ import Styles from "./styles"
 const Introduction = () => {
   return (
     <Styles.Wrapper>
-      <img src='/introduction-illustartion.PNG' alt='' />
+      <img src='/img/svgs/introduction.svg' alt='' />
       <div>
         <SectionTitle>Who We Are</SectionTitle>
         <DescriptionText>
